@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="32001">
+        <setting label="32013" type="text" id="remote_dir" default="/Apps/Attachments"/>
+        <setting label="32014" type="folder" id="local_dir" default="/home/osmc/Pictures"/>
+        <setting label="32015" type="number" id="sync_freq" default="3000"/>
+    </category>
+
+    <category label="32002">
+        <setting label="32020" type="action" action="RunScript(script.service.dropbox, config)"/>
+
+        <!-- TODO: ALLOW USER TO INPUT VALUES, INSTEAD OF RUNNING SCRIPT -->
+        <setting label="32011" type="text" id="app_key" default="" enable="false" />
+        <setting label="32012" type="text" id="app_secret" default="" enable="false" />
+        <setting label="32010" type="text" id="access_token" default="" visible="false"/>
+    </category>
+
+    <!-- Hidden settings -->
+    <setting label="32011" type="text" id="refs_dir" default="resources/refs" visible="false" />
+
+</settings>
